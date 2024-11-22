@@ -1,0 +1,12 @@
+name: Github Actions for Main Branch
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  Test:
+    runs-on: "ubuntu-latest"
+    steps: 
+        - run: echo "Hello Github action"
+        - run: ls -al
+
