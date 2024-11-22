@@ -7,6 +7,10 @@ jobs:
   Test:
     runs-on: "ubuntu-latest"
     steps: 
-        - run: echo "Hello Github action"
-        - run: ls -al
+        - name: Checkout code
+          uses: actions/checkout@v4
+        - name: echo Message
+          run: echo "Hello Github action"
+        - name: Show file in directory
+          run: ls -al
 
